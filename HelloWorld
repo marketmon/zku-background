@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity 0.8.13;
+
+
+contract HelloWorld{
+
+    //establish variable with type and name
+    int input;
+
+    //function to store the numbers, with _input to signify the input in the function
+    function storeNumber(int _input) public {
+        input = _input;
+    }
+
+    //function to retrieve the number from the newly altered variable
+    function retrieveNumber() public view returns(int) {
+        return input;
+    }
+
+}
